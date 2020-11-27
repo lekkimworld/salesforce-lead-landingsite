@@ -23,7 +23,8 @@ export default () => {
             "LastName": body.ln,
             "Company": body.company,
             "Email": body.email,
-            "Product_Family__c": body.product
+            "Product_Family__c": body.product,
+            "OwnerId": process.env.LEAD_OWNER_ID
         });
         res.type("json").send({
             "status": "OK"
