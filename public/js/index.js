@@ -32,6 +32,11 @@ const doPost = (url, body) => {
     return fetcher("POST", url, body);
 }
 window.startApp = () => {
+        // let it snow!
+        Snowflakes({
+            count: 100
+        });
+
         doGet("/api/productfamilies").then(data => {
                     $(`select[name="productfamily"]`).html(`${data.reduce((prev,p) => `${prev}<option value="${p.value}">${p.label}</option>`, "")}`);
         })

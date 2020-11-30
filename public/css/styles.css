@@ -3,6 +3,17 @@ body {
     padding: 1rem;
 }
 
+form {
+    background-image: url("/images/xmastree.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+}
+
+input {
+    z-index: 10 !important;
+}
+
 .main-body {
     min-height: 400px;
 }
@@ -10508,8 +10519,8 @@ a.text-dark:hover {
 
 @media print {
     *,
-    ::after,
-    ::before {
+     ::after,
+     ::before {
         text-shadow: none!important;
         box-shadow: none!important
     }
